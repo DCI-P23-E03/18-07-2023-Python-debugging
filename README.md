@@ -10,7 +10,7 @@ The following code is intended to calculate the sum of all even numbers between 
 def calculate_sum(n):
     total = 0
     for i in range(1, n+1):
-        if i % 2 == 0:
+        if i % 2 != 0:
             total += i
     return total
 
@@ -25,7 +25,7 @@ The code below is an implementation of the factorial function. However, it conta
 ```python
 def factorial(n):
     result = 1
-    for i in range(n, 1, -1):
+    for i in range(n, 2, -1):
         result *= i
     return result
 
